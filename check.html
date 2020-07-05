@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+function init()  {
+	document.getElementById("google-link").onclick=function(e) {
+		e=e||window.event;
+		stopEvent(e);
+		location.href="click_counter.php?redirect_to=http://www.google.com/";
+		return false;
+	}
+}
+window.onload=init;
+</script>
+</head>
+
+<body>
+
+<a href="http://qet.co.ke" id="google-link">Go To Google</a>
+</body>
+</html>
